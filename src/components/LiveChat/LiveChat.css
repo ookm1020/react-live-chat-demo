@@ -1,0 +1,136 @@
+.live-chat-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 448px;
+  min-height: 778px;
+  max-height: 778px;
+  background-color: #eff2f7;
+  border: 1px solid #d9dfeb;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.thread-messages {
+  width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 0px 15px;
+}
+
+.thread-messages > li {
+  margin: 12px 0px;
+  border-radius: 5px;
+}
+.send {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.receive {
+  display: flex;
+}
+
+.send .msg {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4e61ff;
+  max-width: 60%;
+  font-size: 14px;
+  line-height: 1.5em;
+  word-break: break-all;
+  color: #fff;
+  order: 2;
+}
+
+.send .info {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  color: #6e7980;
+  margin-right: 5px;
+  font-size: 14px;
+  order: 1;
+}
+
+.receive .msg {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  max-width: 60%;
+  font-size: 14px;
+  line-height: 1.5em;
+  word-break: break-all;
+}
+
+.receive .info {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  color: #6e7980;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.message-form {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 132px;
+  padding: 16px;
+}
+
+.input-form {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.input-form > .message-send {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #4e61ff;
+}
+
+.input-form > .message-send:hover {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #344aff;
+}
+
+#message-textarea {
+  resize: none;
+  border: 1px solid #d9dfeb;
+  border-radius: 5px;
+  width: 100%;
+  line-height: 1.5;
+  height: 100px;
+  padding: 15px;
+  padding-right: 68px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+#message-textarea:focus {
+  border: 1px solid #344aff;
+}
+
+#message-textarea::-webkit-scrollbar,
+.thread-messages::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
