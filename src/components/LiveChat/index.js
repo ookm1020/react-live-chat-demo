@@ -16,7 +16,7 @@ const LiveChat = props => {
   return (
     <div className="live-chat-container">
       <ul className="thread-messages" ref={threadRef}>
-        {props.data.map((data, i, arr) => {
+        {props.data.map((data, i) => {
           return (
             <li className={data.separate} key={i}>
               <div className="msg">{data.message}</div>

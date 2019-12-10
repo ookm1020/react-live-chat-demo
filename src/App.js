@@ -44,9 +44,13 @@ class App extends Component {
 
     const copyMessages = this.state.messages.slice();
 
+    const currentDate = new Date();
+
     let temp = {
       separate: "send",
-      timestamp: "오후 3:05",
+      timestamp: `${
+        currentDate.getHours() - 12 > 12 ? "오전" : "오후"
+      } ${currentDate.getHours() - 12}:${currentDate.getMinutes()}`,
       name: "이영석",
       img: "/logo.png",
       message: this.state.textArea
